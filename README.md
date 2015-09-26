@@ -47,3 +47,23 @@ Is message plaintext (Y/N)?: N
 Ciphertext: Qntzjxssgdligiowvqudyatt!
 Sample output 2:
 Plaintext: The enemy will attack at dawn!
+...
+
+----
+
+#SOLUTION
+
+The solution is written as java console program
+Follow the below steps to execute the program :
+1> Get the key from user and store it in a variable
+2> Ask the user for Plain text or Cipher text
+3> If Plain Text perform the below steps
+	a> check if the plain text text contains any special characters other than space. if found return error message
+	b> remove the space and convert the plain text to small case and get the numeric position of the alphabets and stor it in an array
+	c> convert the key  to match with the length of the message
+	d> Get the numeric position of the key and store in an array
+	e> Add the key value with message value and store it in a new array calley messagekey array
+	f> Now find the modulus for each value of the message key array and store it in an array called cipher array
+	g> find the alphabet equivalent for the cipher value < a ->1 , b->2 ,c->3 ..... z->26 )
+	
+4> If Cipher Text, then perform the reverse logic of the above explained steps.
